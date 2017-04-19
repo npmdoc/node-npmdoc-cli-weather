@@ -1,0 +1,852 @@
+<html><head></head><body><div class="apidocDiv">
+<style>
+/*csslint
+*/
+.apidocDiv {
+    background: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.apidocDiv a[href] {
+    color: #33f;
+    font-weight: bold;
+    text-decoration: none;
+}
+.apidocDiv a[href]:hover {
+    text-decoration: underline;
+}
+.apidocCodeCommentSpan {
+    background: #bbf;
+    color: #000;
+    display: block;
+}
+.apidocCodeKeywordSpan {
+    color: #d00;
+    font-weight: bold;
+}
+.apidocCodePre {
+    background: #eef;
+    border: 1px solid;
+    color: #777;
+    padding: 5px;
+    white-space: pre-wrap;
+}
+.apidocFooterDiv {
+    margin-top: 20px;
+    text-align: center;
+}
+.apidocModuleLi {
+    margin-top: 10px;
+}
+.apidocSectionDiv {
+    border-top: 1px solid;
+    margin-top: 20px;
+}
+.apidocSignatureSpan {
+    color: #777;
+    font-weight: bold;
+}
+</style>
+<h1>api documentation for
+    <a href="https://github.com/apizzimenti/cli-weather#readme">cli-weather (v2.0.7)</a>
+</h1>
+<h4>Puts the weather in your console.</h4>
+<div class="apidocSectionDiv"><a href="#apidoc.tableOfContents" id="apidoc.tableOfContents"><h1>table of contents</h1></a><ol>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.cli-weather">module cli-weather</a><ol>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">cli-weather.</span>Args</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">cli-weather.</span>Config</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">cli-weather.</span>Error</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">cli-weather.</span>Files</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">cli-weather.</span>Globals</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">cli-weather.</span>Help</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">cli-weather.</span>Output</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">cli-weather.</span>Status</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.cli-weather.Args">module cli-weather.Args</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.cli-weather.Args.Args">
+            function <span class="apidocSignatureSpan">cli-weather.</span>Args
+            <span class="apidocSignatureSpan">(args, config)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.cli-weather.Config">module cli-weather.Config</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.cli-weather.Config.config_weather">
+            function <span class="apidocSignatureSpan">cli-weather.Config.</span>config_weather
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.cli-weather.Error">module cli-weather.Error</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.cli-weather.Error.Error">
+            function <span class="apidocSignatureSpan">cli-weather.</span>Error
+            <span class="apidocSignatureSpan">(message)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.cli-weather.Files">module cli-weather.Files</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.cli-weather.Files.read">
+            function <span class="apidocSignatureSpan">cli-weather.Files.</span>read
+            <span class="apidocSignatureSpan">(file)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.cli-weather.Files.write">
+            function <span class="apidocSignatureSpan">cli-weather.Files.</span>write
+            <span class="apidocSignatureSpan">(file, data)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.cli-weather.Globals">module cli-weather.Globals</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.cli-weather.Globals.Location">
+            function <span class="apidocSignatureSpan">cli-weather.Globals.</span>Location
+            <span class="apidocSignatureSpan">(location)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.cli-weather.Globals.Weather">
+            function <span class="apidocSignatureSpan">cli-weather.Globals.</span>Weather
+            <span class="apidocSignatureSpan">(w)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.cli-weather.Globals.hotCold">
+            function <span class="apidocSignatureSpan">cli-weather.Globals.</span>hotCold
+            <span class="apidocSignatureSpan">(temp, units)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.cli-weather.Globals.paramExist">
+            function <span class="apidocSignatureSpan">cli-weather.Globals.</span>paramExist
+            <span class="apidocSignatureSpan">(param, type)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.cli-weather.Globals.realTime">
+            function <span class="apidocSignatureSpan">cli-weather.Globals.</span>realTime
+            <span class="apidocSignatureSpan">(timestring, includeDay)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.cli-weather.Globals.tableContent">
+            function <span class="apidocSignatureSpan">cli-weather.Globals.</span>tableContent
+            <span class="apidocSignatureSpan">(content)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.cli-weather.Help">module cli-weather.Help</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.cli-weather.Help.Help">
+            function <span class="apidocSignatureSpan">cli-weather.</span>Help
+            <span class="apidocSignatureSpan">(title, description, version, args)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.cli-weather.Output">module cli-weather.Output</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.cli-weather.Output.Output">
+            function <span class="apidocSignatureSpan">cli-weather.</span>Output
+            <span class="apidocSignatureSpan">(location, weather, args)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.cli-weather.Status">module cli-weather.Status</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.cli-weather.Status.status">
+            function <span class="apidocSignatureSpan">cli-weather.Status.</span>status
+            <span class="apidocSignatureSpan">(message, bad)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+</ol></div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.cli-weather" id="apidoc.module.cli-weather">module cli-weather</a></h1>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.cli-weather.Args" id="apidoc.module.cli-weather.Args">module cli-weather.Args</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.cli-weather.Args.Args" id="apidoc.element.cli-weather.Args.Args">
+        function <span class="apidocSignatureSpan">cli-weather.</span>Args
+        <span class="apidocSignatureSpan">(args, config)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Args(args, config) {
+
+    if (paramExist(args, "object")) {
+        this.args = args;
+    } else {
+        this.args = {};
+    }
+
+    if (paramExist(config, "object")) {
+        this.config = config;
+    } else {
+        this.config = {};
+    }
+
+    this._configure();
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.cli-weather.Config" id="apidoc.module.cli-weather.Config">module cli-weather.Config</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.cli-weather.Config.config_weather" id="apidoc.element.cli-weather.Config.config_weather">
+        function <span class="apidocSignatureSpan">cli-weather.Config.</span>config_weather
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function config_weather() {
+
+    var weather = require("./Data"),
+        tools = require("../tools"),
+        pkg = require("../../package.json"),
+        dir = __dirname + "/config.json",
+
+        min = require("minimist")(process.argv.slice(1)),
+        chalk = require("chalk"),
+
+        help = tools.Help,
+        Args = tools.Args,
+        write = tools.write,
+        read = tools.read,
+
+        // creates a new Help object
+        Help = new help(
+            "cli-weather",
+            "Retrieves weather for your current location or an input location.",
+            pkg.version,
+            {
+                "celsius": "-c | --celsius â†’ Change all units to si units (Celsius degrees/meters per second).",
+                "canada": "--can â†’ Change all units to Canadian units (Celsius degrees/kilometers per second).",
+                "help": "-h | --help â†’ Display this help page.",
+                "address": "-a | --address â†’ Retrieve the weather for the provided location.",
+                "lat/long": "-a | --address â†’ Retrieve the weather for the provided coordinates.",
+                "zip": "-z | --zip â†’ Retrieve the weather for the provided zip code.",
+                "verbose": "-v | --verbose â†’ Show status messages while retrieving your weather.",
+                "save": "-s | --save â†’ Save the current options as defaults.",
+                "clear": "--clear â†’ Clear the current default options.",
+                "key": "-k | --key â†’ Use your own DarkSky api key which will be used for all requests.",
+                "clearkey": "--clearkey â†’ Clear the saved DarkSky api key."
+            }
+        ),
+
+        args,
+        auto,
+        prop,
+
+        // reads saved data from config file
+        re = read(dir, min);
+
+    if (min.s || min.save) {
+
+        min.s ? delete min.s : delete min.save;
+        re.args = min;
+
+        if (min.k || min.key) {
+            re.key = min.k ? min.k : min.key;
+            re.args.key ? delete re.args.key : delete re.args.k;
+        }
+
+        write(dir, re);
+
+    } else if (min.clear) {
+        re.args = {};
+        write(dir, re);
+    } else if (min.clearkey) {
+        re.key = {};
+        write(dir, re);
+    }
+
+    min = Object.assign(re.args || {}, min);
+    min.key = re.key;
+
+    // create new Args object for easy argstring reference
+    args = new Args(min, {
+        "address": ["a", "address"],
+        "help": ["h", "help"],
+        "celsius": ["c", "celsius"],
+        "zip": ["z", "zip"],
+        "verbose": ["v", "verbose"],
+        "save": ["s", "save"],
+        "canada": ["can"],
+        "clear": ["clear"],
+        "key": ["k", "key"],
+        "clearkey": ["clearkey"]
+    });
+
+    // if there's a provided address or zip code, automatically retrieve location
+    auto = !(args.get("address") || args.get("zip"));
+
+    if (args.get("help")) {
+        Help.display();
+    }
+
+    if (args.get("verbose")) {
+
+        console.log();
+        console.log(chalk.bold.underline("cli-weather v" + pkg.version));
+        console.log();
+
+        for (prop in args.flattened) {
+            if (prop != "key") {
+                console.log(`${prop} = ${typeof args.get(prop) === "string" ? args.get(prop) : "true"}`);
+            }
+        }
+
+        console.log();
+    }
+
+    if (auto) {
+        weather.ip(args, weather.ip_location);
+    } else if (!auto) {
+        weather.p_location(args, weather.weather);
+    }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.cli-weather.Error" id="apidoc.module.cli-weather.Error">module cli-weather.Error</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.cli-weather.Error.Error" id="apidoc.element.cli-weather.Error.Error">
+        function <span class="apidocSignatureSpan">cli-weather.</span>Error
+        <span class="apidocSignatureSpan">(message)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Error(message) {
+
+    if (typeof message == "string" &amp;&amp; message !== undefined &amp;&amp; message !== null) {
+        this.message = message;
+    } else {
+        this.message = "";
+    }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.cli-weather.Files" id="apidoc.module.cli-weather.Files">module cli-weather.Files</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.cli-weather.Files.read" id="apidoc.element.cli-weather.Files.read">
+        function <span class="apidocSignatureSpan">cli-weather.Files.</span>read
+        <span class="apidocSignatureSpan">(file)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function read(file) {
+
+    var f = paramExist(file, "string") ? file : __dirname + filename,
+        data;
+
+    if (fs.existsSync(f)) {
+
+        data = fs.readFileSync(f, { encoding: "utf8" });
+
+        if (data) {
+            return JSON.parse(data);
+        } else {
+            return {};
+        }
+
+    } else {
+        return null;
+    }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.cli-weather.Files.write" id="apidoc.element.cli-weather.Files.write">
+        function <span class="apidocSignatureSpan">cli-weather.Files.</span>write
+        <span class="apidocSignatureSpan">(file, data)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function write(file, data) {
+
+    var f = paramExist(file, "string") ? file : __dirname + filename,
+        d = paramExist(data, "object") ? JSON.stringify(data) : "{}",
+        e = new Error();
+
+    fs.writeFile(f, d, function (err) {
+
+        if (err) {
+            e.message = f + " couldn't be written to - " + chalk.bgWhite.black("sudo") + " may be needed to" +
+                " execute the save command, but " + chalk.bgWhite.black("sudo") + " must be run each time presets are" +
+                " saved. You can also run\n\n" + chalk.black.bold("\t sudo chmod 747 " + __dirname.split("/").slice(0, -2).join("/") + "/")
+                + "\n\nto change the read/write/execute permissions in the directory where cli-weather is stored.";
+            e.throw();
+        }
+
+        status(f + " was written to successfully.", true);
+    });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.cli-weather.Globals" id="apidoc.module.cli-weather.Globals">module cli-weather.Globals</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.cli-weather.Globals.Location" id="apidoc.element.cli-weather.Globals.Location">
+        function <span class="apidocSignatureSpan">cli-weather.Globals.</span>Location
+        <span class="apidocSignatureSpan">(location)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Location(location) {
+
+    if (paramExist(location, "object")) {
+        apply(location, this);
+    }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.cli-weather.Globals.Weather" id="apidoc.element.cli-weather.Globals.Weather">
+        function <span class="apidocSignatureSpan">cli-weather.Globals.</span>Weather
+        <span class="apidocSignatureSpan">(w)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Weather(w) {
+
+    if (paramExist(w, "object")) {
+        apply(w, this);
+    }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.cli-weather.Globals.hotCold" id="apidoc.element.cli-weather.Globals.hotCold">
+        function <span class="apidocSignatureSpan">cli-weather.Globals.</span>hotCold
+        <span class="apidocSignatureSpan">(temp, units)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function hotCold(temp, units) {
+
+    var t,
+        e = new Error();
+
+    if (paramExist(temp, "number")) {
+        t = units ? 0 : 32;
+        return temp &gt; t ? chalk.red(temp) : chalk.blue(temp);
+    }
+
+    e.message = "The temperature parameter does not exist.";
+    e.throw();
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.cli-weather.Globals.paramExist" id="apidoc.element.cli-weather.Globals.paramExist">
+        function <span class="apidocSignatureSpan">cli-weather.Globals.</span>paramExist
+        <span class="apidocSignatureSpan">(param, type)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function paramExist(param, type) {
+    return typeof param == type &amp;&amp; param !== undefined &amp;&amp; param !== null;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.cli-weather.Globals.realTime" id="apidoc.element.cli-weather.Globals.realTime">
+        function <span class="apidocSignatureSpan">cli-weather.Globals.</span>realTime
+        <span class="apidocSignatureSpan">(timestring, includeDay)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function realTime(timestring, includeDay) {
+
+    var date = new Date(timestring * 1000),
+        hours = date.getHours(),
+        minutes = date.getMinutes(),
+        month = null,
+        day = null,
+        suffix = "";
+
+    suffix = hours &gt; 12 ? "pm" : "am";
+    hours = hours &gt; 12 ? hours - 12 : hours;
+    minutes = minutes &gt; 10 ? minutes : "0" + minutes;
+
+    if (includeDay) {
+
+        switch (date.getMonth()) {
+
+            case 0:
+                month = "January";
+                break;
+
+            case 1:
+                month = "February";
+                break;
+
+            case 2:
+                month = "March";
+                break;
+
+            case 3:
+                month = "April";
+                break;
+
+            case 4:
+                month = "May";
+                break;
+
+            case 5:
+                month = "June";
+                break;
+
+            case 6:
+                month = "July";
+                break;
+
+            case 7:
+                month = "August";
+                break;
+
+            case 8:
+                month = "September";
+                break;
+
+            case 9:
+                month = "October";
+                break;
+
+            case 10:
+                month = "November";
+                break;
+
+            case 11:
+                month = "December";
+                break;
+        }
+
+        day = date.getDate();
+
+    }
+
+    return (month ? month  + " " : "") + (day ? day + " " : "") + hours + ":" + minutes + suffix;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.cli-weather.Globals.tableContent" id="apidoc.element.cli-weather.Globals.tableContent">
+        function <span class="apidocSignatureSpan">cli-weather.Globals.</span>tableContent
+        <span class="apidocSignatureSpan">(content)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function tableContent(content) {
+
+    return {
+        content: content,
+        hAlign: "center"
+    };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.cli-weather.Help" id="apidoc.module.cli-weather.Help">module cli-weather.Help</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.cli-weather.Help.Help" id="apidoc.element.cli-weather.Help.Help">
+        function <span class="apidocSignatureSpan">cli-weather.</span>Help
+        <span class="apidocSignatureSpan">(title, description, version, args)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Help(title, description, version, args) {
+
+    if (paramExist(args, "object")) {
+        this.args = args;
+    } else {
+        this.args = {};
+    }
+
+    if (paramExist(description, "string")) {
+        this.desc = description;
+    } else {
+        this.desc = "";
+    }
+
+    if (paramExist(title, "string")) {
+        this.title = title;
+    } else {
+        this.title = "";
+    }
+
+    if (paramExist(version, "string")) {
+        this.version = version;
+    } else {
+        this.version = "";
+    }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.cli-weather.Output" id="apidoc.module.cli-weather.Output">module cli-weather.Output</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.cli-weather.Output.Output" id="apidoc.element.cli-weather.Output.Output">
+        function <span class="apidocSignatureSpan">cli-weather.</span>Output
+        <span class="apidocSignatureSpan">(location, weather, args)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Output(location, weather, args) {
+
+    var e = new Error("");
+
+    if (paramExist(location, "object")) {
+        this.location = location;
+    } else {
+        e.message = "The location parameter does not exist.";
+        e.throw();
+        return;
+    }
+
+    if (paramExist(weather, "object")) {
+        this.weather = weather;
+    } else {
+        e.message = "The weather parameter does not exist.";
+        e.throw();
+        return;
+    }
+
+    if (paramExist(args, "object")) {
+        this.args = args;
+    } else {
+        e.message = "The args parameter does not exist.";
+        e.throw();
+        return;
+    }
+
+    this.alerts = this.weather.alerts ? this.weather.alerts : [];
+    this.currently = this.weather.currently;
+    this.daily = this.weather.daily.data.slice(0, this.weather.daily.data.length - 4);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.cli-weather.Status" id="apidoc.module.cli-weather.Status">module cli-weather.Status</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.cli-weather.Status.status" id="apidoc.element.cli-weather.Status.status">
+        function <span class="apidocSignatureSpan">cli-weather.Status.</span>status
+        <span class="apidocSignatureSpan">(message, bad)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function status(message, bad) {
+
+    var e = new Error();
+
+    if (paramExist(message, "string")) {
+
+        if (bad) {
+            console.log(chalk.green("âœ“ " + message));
+        } else {
+            console.log(chalk.red("âœ— " + message));
+        }
+    } else {
+        e.message = "No status message was provided.";
+        e.throw();
+    }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocFooterDiv">
+    [ this document was created with
+    <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a>
+    ]
+</div>
+</div>
+</body></html>
